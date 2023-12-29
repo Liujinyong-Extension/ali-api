@@ -1,17 +1,18 @@
 <h1 align="center"> ali-api </h1>
 
-<p align="center"> 阿里云api.</p>
+<p align="center"> 阿里云整合API.</p>
 
 
 ## Installing
 
 ```shell
-$ composer require liujinyong/ali-api -vvv
+$ composer require liujinyong/ali-api 
 ```
 
-## Usage
 
-### 1.短信认证使用
+## 整合阿里云API
+
+### 1号码认证服务-[短信认证功能](https://help.aliyun.com/zh/pnvs/product-overview/message-authentication?spm=a2c4g.11186623.0.0.6ca14130yQthsP)
 ```php
     //发送短信
     $client = new \Liujinyong\AliApi\core\number_authentication\Message("","","","");
@@ -23,7 +24,7 @@ $ composer require liujinyong/ali-api -vvv
     $res->toMap()
 ```
 
-### 2.一键登录
+### 2.号码认证服务-[号码认证功能](https://help.aliyun.com/zh/pnvs/product-overview/number-authentication?spm=a2c4g.11186623.0.0.4a4f474c3u5Ytu)
 ```php
 
     //获取手机号
