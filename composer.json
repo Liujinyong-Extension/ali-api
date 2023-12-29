@@ -1,0 +1,23 @@
+{
+    "name": "liujinyong\/ali-api",
+    "description": "阿里云api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "killbrid",
+            "email": "893296814@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">5.5",
+        "alibabacloud/dypnsapi-20170525": "^1.1.0",
+        "alibabacloud/darabonba-openapi": "^0.2.10",
+        "alibabacloud/tea-console": "^0.1.0",
+        "alibabacloud/tea-utils": "^0.2.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liujinyong\\AliApi\\": "src"
+        }
+    }
+}
