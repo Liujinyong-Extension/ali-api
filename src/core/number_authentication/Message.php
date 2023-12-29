@@ -68,10 +68,11 @@ class Message
         // 工程代码泄露可能会导致 AccessKey 泄露，并威胁账号下所有资源的安全性。以下代码示例仅供参考，建议使用更安全的 STS 方式，更多鉴权访问方式请参见：https://help.aliyun.com/document_detail/311677.html
         $client                   = $this->createClient();
         $sendSmsVerifyCodeRequest = new SendSmsVerifyCodeRequest([
-                                                                     "phoneNumber"   => $phoneNumber,
-                                                                     "signName"      => $this->signName,
-                                                                     "templateCode"  => $this->templateCode,
-                                                                     "templateParam" => "{\"code\":\"##code##\"}"
+                                                                     "phoneNumber"      => $phoneNumber,
+                                                                     "signName"         => $this->signName,
+                                                                     "templateCode"     => $this->templateCode,
+                                                                     "templateParam"    => "{\"code\":\"##code##\"}",
+                                                                     "returnVerifyCode" => true
                                                                  ]);
         $runtime                  = new RuntimeOptions([]);
         try {
