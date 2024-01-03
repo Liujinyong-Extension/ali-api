@@ -37,6 +37,20 @@ $ composer require liujinyong/ali-api
 ```
 
 
+### 3.融合认证服务-[融合认证功能](https://help.aliyun.com/zh/pnvs/product-overview/integration-authentication-function?spm=a2c4g.11186623.0.0.72d548feiubANN)
+```php
+
+    //获取token
+    $client = new \Liujinyong\AliApi\core\rong_authentication\Rong("","");
+    $res = $client->gettoken("Android",1000,'',"","");
+
+    
+    //获取手机号
+    $client = new \Liujinyong\AliApi\core\rong_authentication\Rong("","");
+    $res = $client->getPhone("");
+```
+
+
 ## Contributing
 
 You can contribute in one of three ways:
